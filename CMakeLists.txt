@@ -6,7 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories("services_common/cpp/inc")
-add_compile_definitions("QCC_OS_GROUP_POSIX")
+
+add_definitions("-DQCC_OS_GROUP_POSIX -DQCC_OS_LINUX")
 
 set(alljoyn-services-common-sources
     "${CMAKE_CURRENT_SOURCE_DIR}/services_common/cpp/src/AsyncTaskQueue.cc"
