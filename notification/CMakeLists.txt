@@ -60,6 +60,6 @@ add_library(alljoyn_notification
     ${alljoyn-notification-sources}
     )
 
-add_dependencies(alljoyn_notification status_header_cpp)
+install(TARGETS alljoyn_notification)
 
 
